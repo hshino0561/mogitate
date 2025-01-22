@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    /* font-family: 'Arial', sans-serif; */
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.product-edit {
+    display: flex;
+    gap: 40px;
+}
+
+.product-image {
+    width: 45%;
+    /* text-align: center; */
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.file-upload-wrapper {
+    display: flex;
+    align-items: center;
+    /* width: 40%; */
+}
+
+.file-label {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 7px;
+    background-color: #ddd;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    /* 枠線の追加 */
+    border: 1px solid #000;
+    /* 文字の折り返し禁止 */
+    white-space: nowrap;
+}
+
+.file-name {
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.product-details {
+    width: 55%;
+    /* 右側のコンテンツの幅を指定 */
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    /* font-weight: bold; */
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+}
+
+.season-options {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 4px;
+    /* 丸型にするための設定 */
+    border-radius: 50%;
+}
+
+.custom-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    /* ラベルとスペースを調整 */
+}
+
+.custom-checkbox input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkmark {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    /* チェックボックスの背景色を白に */
+    border-radius: 50%;
+    /* 丸型にするための設定 */
+    border: 2px solid black;
+    /* チェックボックスの境界線を黒に */
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.custom-checkbox input[type="checkbox"]:checked~.checkmark {
+    background-color: black;
+    /* チェックが入った際の背景色を黒に */
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    /* チェックマークの色を白に */
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox input[type="checkbox"]:checked~.checkmark:after {
+    display: block;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    /* ボタンを中央に配置 */
+    align-items: center;
+    position: relative;
+    /* ゴミ箱アイコンのために必要 */
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #ddd;
+    color: black;
+    margin-right: 20px;
+    /* 戻るボタンの横幅を拡げる */
+    width: 15%;
+}
+
+.save-btn {
+    background-color: #f2b600;
+    color: black;
+    margin-right: 20px;
+    width: 15%;
+}
+
+.save-btn:hover {
+    background-color: #e5a800;
+}
+
+.trash-btn {
+    background-color: transparent;
+    color: red;
+    padding: 8px;
+    cursor: pointer;
+    position: absolute;
+    /* 絶対位置に設定 */
+    right: 0;
+    /* 右端に配置 */
+}
+
+.delete-icon {
+    font-size: 24px;
+    margin-top: -15px;
+}
+
+.category__alert--danger {
+    color: red;
+    /* 文字色を赤に指定 */
+    font-size: 0.9em;
+    /* フォントサイズを調整（お好みで） */
+    /* background-color: #f8d7da; */
+    /* 背景色を淡い赤色に指定（お好みで） */
+    /* border: 1px solid #f5c6cb; */
+    /* ボーダー色を調整（お好みで） */
+    /* padding: 10px; */
+    /* パディングを追加して余白を調整 */
+    border-radius: 5px;
+    /* 角を丸める（お好みで） */
+    margin-left: 43%;
+}
+
+.error-message {
+    font-size: 14px;
+    color: red;
+    margin-top: -7px;
+}

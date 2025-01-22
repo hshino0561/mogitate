@@ -1,0 +1,22 @@
+.header {
+    background-color: white;
+    padding: 1px 20px;
+    border-bottom: 1px solid #eee;
+    margin-top: -10px;
+}
+
+.logo {
+    font-family: 'jsMath-cmti10', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 32.73px;
+    color: #f5c800;
+}
+
+h1 {
+    font-size: 2em;
+    /* margin: 0.67em 0; */
+    margin-top: 15px;
+    margin-bottom: 5px;
+}

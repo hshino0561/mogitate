@@ -1,0 +1,229 @@
+body {
+    color: black;
+    margin: 0;
+    /* font-family: 'Arial', sans-serif; */
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 600px;
+    margin: 5px auto;
+    padding: 10px;
+    /* background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.form-title {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* ファイル選択ボタンのスタイル */
+.file-label {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 7px;
+    background-color: #ddd;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    /* 枠線の追加 */
+    border: 1px solid #000;
+    /* 文字の折り返し禁止 */
+    white-space: nowrap;
+}
+
+/* .file-label:hover {
+    background-color: #808080;
+} */
+
+.file-upload-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.file-upload-wrapper input[type="file"] {
+    display: none;
+    /* ファイル選択インプットを非表示にする */
+}
+
+.file-name {
+    margin-top: 15px;
+    margin-left: 10px;
+    /* 余白を追加 */
+    font-size: 14px;
+    color: #333;
+}
+
+.image-preview {
+    /* margin-top: 20px; */
+    max-width: 300px;
+    max-height: 300px;
+}
+
+textarea {
+    resize: none;
+}
+
+/* 必須ラベルのスタイル */
+.required-label {
+    font-size: 10px;
+    background-color: red;
+    color: white;
+    padding: 0px 2px;
+    /* border-radius: 3px; */
+    vertical-align: 2px;
+    margin-left: 4px;
+}
+
+.info-label {
+    color: #666;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+/* 赤字クラス */
+.red-text {
+    color: red;
+}
+
+.season-options {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 4px;
+    /* 丸型にするための設定 */
+    border-radius: 50%;
+}
+
+.custom-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    /* ラベルとスペースを調整 */
+}
+
+.custom-checkbox input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkmark {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    /* チェックボックスの背景色を白に */
+    border-radius: 50%;
+    /* 丸型にするための設定 */
+    border: 2px solid black;
+    /* チェックボックスの境界線を黒に */
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.custom-checkbox input[type="checkbox"]:checked~.checkmark {
+    background-color: black;
+    /* チェックが入った際の背景色を黒に */
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    /* チェックマークの色を白に */
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox input[type="checkbox"]:checked~.checkmark:after {
+    display: block;
+}
+
+.form-buttons {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 15%;
+    /* ボタンを中央に配置 */
+    /* justify-content: center; */
+}
+
+.btn {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #ddd;
+    color: black;
+}
+
+.submit-btn {
+    background-color: #f2b600;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #e5a800;
+}
+
+.category__alert--danger {
+    color: red;
+    /* 文字色を赤に指定 */
+    font-size: 0.9em;
+    /* フォントサイズを調整（お好みで） */
+    /* background-color: #f8d7da; */
+    /* 背景色を淡い赤色に指定（お好みで） */
+    /* border: 1px solid #f5c6cb; */
+    /* ボーダー色を調整（お好みで） */
+    /* padding: 10px; */
+    /* パディングを追加して余白を調整 */
+    border-radius: 5px;
+    /* 角を丸める（お好みで） */
+    margin-left: 43%;
+}
+
+.error-message {
+    font-size: 14px;
+    color: red;
+    margin-top: -7px;
+}
